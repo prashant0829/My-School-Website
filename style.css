@@ -1,0 +1,269 @@
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.parallax {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.landing-section {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  padding: 0 5% 0 5%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(254, 255, 211);
+  font-size: 1.4rem;
+  transition: 0.5s;
+  margin: 5px 10px 4px 10px;
+  padding-bottom: 4px;
+}
+
+/* Navbar link hover effect color */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffc107;
+  border-bottom: 4px solid #ffc107;
+  margin-bottom: 4px;
+  padding-bottom: 0px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  /* color: rgb(255, 228, 238); */
+}
+.navbar-light .navbar-brand {
+  color: #ffc107;
+  transition: 0.4s;
+}
+.navbar-light .navbar-brand:hover {
+  color: rgb(255, 87, 151);
+}
+
+.welcome-box .heading {
+  margin-top: 8rem;
+  font-size: 6rem;
+  font-family: "Roboto", sans-serif;
+}
+.welcome-box .sub-heading {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  border-left: 4px solid #ffc107;
+  padding: 5px;
+  align-self: flex-start;
+}
+.nav-section .btn {
+  padding: 10px 15px 10px 15px;
+  font-size: 20px;
+}
+
+.welcome-para {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.perk-1 {
+  color: #219ebc;
+}
+.perk-2 {
+  color: #023047;
+}
+.perk-3 {
+  color: #ffb703;
+}
+.perk-4 {
+  color: #fb8500;
+}
+
+.perks-para {
+  font-size: 1.2rem;
+  color: rgb(90, 89, 89);
+}
+
+.motto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.motto-para {
+  font-size: 1.2rem;
+  color: rgb(98, 98, 98);
+}
+
+.motto .btn {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #5c5c5c;
+}
+
+.review {
+  background-image: url("parent.jpg");
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#testimonials {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial-image {
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carddiv {
+  background: #232321;
+}
+h1 {
+  color: #fff;
+  padding: 10px 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: none;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+a {
+  color: initial;
+}
+a:hover {
+  text-decoration: initial;
+}
+
+.text-muted i {
+  margin: 0 10px;
+}
+
+.contact-section {
+  background-image: url("contact.jpg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.contact-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border-radius: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  outline: none;
+}
+
+.form-group .btn {
+  width: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 1.25rem;
+  background-color: rgb(191, 24, 241);
+  border: none;
+}
+.contact-section .container {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: #5c5c5c;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 20px 0 20px 0;
+}
+
+.instagram {
+  color: rgb(243, 28, 64);
+}
+.facebook {
+  color: rgb(30, 126, 251);
+}
+.linkedin {
+  color: rgb(10, 157, 255);
+}
+
+@media (max-width:400px){
+  .navbar-brand {
+    font-size: 1.8rem;
+}
+  .welcome-box .heading {
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+.h1, h1 {
+  font-size: 2rem;
+}
+.pl-5, .px-5 {
+  padding-left: 1rem!important;
+}
+.pr-5, .px-5 {
+  padding-right: 1rem!important;
+}
+.testimonial-text {
+  font-size: 1.2rem;
+}
+.contact-section .container {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 50px;
+}
+footer p {
+  font-size: 1rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+}
+@media (max-width:600px) and (min-width:400px){
+  .welcome-box .heading {
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+}
+@media (max-width:1000px) and (min-width:600px){
+  .welcome-box .heading {
+    margin-top: 4rem;
+    font-size: 4rem;
+}
+}
