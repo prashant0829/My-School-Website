@@ -55,12 +55,16 @@ html {
   animation-name: heading;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
-@keyframes heading{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@keyframes heading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .welcome-box .sub-heading {
   background-color: rgba(0, 0, 0, 0.6);
@@ -75,12 +79,14 @@ html {
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 }
-@keyframes slide{
-  0%{left: -400px;}
-  100%{left: 0px;}
+@keyframes slide {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 0px;
+  }
 }
-
-
 
 .nav-section .btn {
   padding: 10px 15px 10px 15px;
@@ -250,47 +256,68 @@ footer p {
   color: rgb(10, 157, 255);
 }
 
-@media (max-width:400px){
+@media (max-width: 400px) {
   .navbar-brand {
     font-size: 1.8rem;
-}
+  }
   .welcome-box .heading {
     margin-top: 10rem;
     font-size: 3rem;
+  }
+  .h1,
+  h1 {
+    font-size: 2rem;
+  }
+  .pl-5,
+  .px-5 {
+    padding-left: 1rem !important;
+  }
+  .pr-5,
+  .px-5 {
+    padding-right: 1rem !important;
+  }
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+  .contact-section .container {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 50px;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
-.h1, h1 {
-  font-size: 2rem;
-}
-.pl-5, .px-5 {
-  padding-left: 1rem!important;
-}
-.pr-5, .px-5 {
-  padding-right: 1rem!important;
-}
-.testimonial-text {
-  font-size: 1.2rem;
-}
-.contact-section .container {
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-top: 50px;
-}
-footer p {
-  font-size: 1rem;
-}
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-}
-@media (max-width:600px) and (min-width:400px){
+@media (max-width: 600px) and (min-width: 400px) {
   .welcome-box .heading {
     margin-top: 10rem;
     font-size: 3rem;
+  }
 }
-}
-@media (max-width:1000px) and (min-width:600px){
+@media (max-width: 1000px) and (min-width: 600px) {
   .welcome-box .heading {
     margin-top: 14rem;
     font-size: 4rem;
+  }
 }
+
+@media (max-width: 1000px) {
+  .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+  }
 }
