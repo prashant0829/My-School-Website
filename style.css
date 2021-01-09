@@ -21,7 +21,7 @@ html {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgb(254, 255, 211);
+  color: #ffdd77;
   font-size: 1.4rem;
   transition: 0.5s;
   margin: 5px 10px 4px 10px;
@@ -49,9 +49,18 @@ html {
 }
 
 .welcome-box .heading {
-  margin-top: 8rem;
+  margin-top: 12rem;
   font-size: 6rem;
   font-family: "Roboto", sans-serif;
+  animation-name: heading;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+}
+
+@keyframes heading{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 .welcome-box .sub-heading {
   background-color: rgba(0, 0, 0, 0.6);
@@ -59,7 +68,20 @@ html {
   border-left: 4px solid #ffc107;
   padding: 5px;
   align-self: flex-start;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
+@keyframes slide{
+  0%{left: -400px;}
+  100%{left: 0px;}
+}
+
+
+
 .nav-section .btn {
   padding: 10px 15px 10px 15px;
   font-size: 20px;
@@ -144,12 +166,17 @@ h1 {
   padding: 10px 0;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; */
+
   transition: 0.3s;
   border: none;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
 }
 a {
   color: initial;
@@ -228,7 +255,7 @@ footer p {
     font-size: 1.8rem;
 }
   .welcome-box .heading {
-    margin-top: 3rem;
+    margin-top: 10rem;
     font-size: 3rem;
 }
 .h1, h1 {
@@ -257,13 +284,13 @@ footer p {
 }
 @media (max-width:600px) and (min-width:400px){
   .welcome-box .heading {
-    margin-top: 3rem;
+    margin-top: 10rem;
     font-size: 3rem;
 }
 }
 @media (max-width:1000px) and (min-width:600px){
   .welcome-box .heading {
-    margin-top: 4rem;
+    margin-top: 14rem;
     font-size: 4rem;
 }
 }
